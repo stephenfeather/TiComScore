@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'SDK' target in the 'SDK' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "CSLog.h"
+#endif
+
+/* 
+ Wrapper for NSLog that only works with Debug configuration.
+ Must ADD -DDEBUG to compiler flags
+ 
+ CSDLog - The log is printed in debug configuration
+ CSALog - The log is printed in all configurations
+ */
+
+#ifdef DEBUG
+#define CSDLog(fmt, ...) [CSLog log:(@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__];
+#else
+#define CSDLog(...) /* */
+#endif

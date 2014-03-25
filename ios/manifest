@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.7
+apiversion: 2
+description: TiComscore
+author: Stephen Feather
+license: Apache 2
+copyright: Copyright (c) 2014 by Feather Direct, LLC
+
+
+# these should not be edited
+name: TiComscore
+moduleid: com.featherdirect.ticomscore
+guid: 7e074a77-b985-4c26-bad2-7f8b3d2ac2d3
+platform: iphone
+minsdk: 3.2.2.GA
