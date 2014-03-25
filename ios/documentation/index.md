@@ -17,23 +17,81 @@ The TiComscore variable is a reference to the Module object.
 TODO: If your module has an API, you should document
 the reference here.
 
-### ___PROJECTNAMEASIDENTIFIER__.function
+### setCustomerC2
 
-TODO: This is an example of a module function.
+A method that allows the setting of the ComScore supplied CustomerC2 value. It must be called before any event tracking is fired.
 
-### ___PROJECTNAMEASIDENTIFIER__.property
+```javascript
+TiComscore.setCustomerC2('your_c2');
+```
 
-TODO: This is an example of a module property.
+### setPublisherSecret
 
-## Usage
+A method that allows the setting of the ComScore supplied PublisherSecret used to anonymize user ids. It must be called before any event tracking is fired.
 
-TODO: Enter your usage example here
+```javascript
+TiComscore.setPublisherSecret('YourPublisherSecretString');
+```
+### setAppName
+
+By default the module grabs the app name from the info.plist. This method can be used to override this behavior. It must be called before any event tracking is fired.
+
+```javascript
+TiComscore.setAppName('My Cool App');
+```
+
+### enableAutoUpdate
+
+The module will push updates to the server on its own.  This method allows you to customize the interval and wether the module should track app events while your app is in the background. 
+
+```javascript
+TiComscore.enableAutoUpdate({
+        interval: 125,
+        foregroundOnly: 1
+    });
+```
+
+### onUxActive
+
+A method that marks the beginning of an event.
+
+```javascript
+TiComscore.onUxActive();
+```
+
+### onUxInactive
+
+A method that marks the end of an event.
+
+```javascript
+TiComscore.onUxInactive();
+```
+
+## Support
+
+There is none. Freely given, freely received, user beware.
+
+## Warranty
+
+There is none.  If you lose your job, your health, end up living in a van down by the river, I am not responsible. User beware.
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+Stephen Feather
+@stephenfeather
 
 ## License
 
-TODO: Enter your license/legal information here.
+Copyright 2014 Feather Direct, LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
