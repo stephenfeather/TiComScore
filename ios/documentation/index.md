@@ -22,7 +22,7 @@ the reference here.
 A method that allows the setting of the ComScore supplied CustomerC2 value. It must be called before any event tracking is fired.
 
 ```javascript
-TiComscore.setCustomerC2('your_c2');
+TiComscore.setCustomerC2('1000001');
 ```
 
 ### setPublisherSecret
