@@ -10,8 +10,11 @@ version 2.1403.14
 ## Author
 
 **Stephen Feather**
+
 web: http://featherdirect.com
+
 twitter: @stephenfeather
+
 
 ## License
 
