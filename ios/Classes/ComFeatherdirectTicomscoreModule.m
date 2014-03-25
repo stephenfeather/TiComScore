@@ -89,7 +89,7 @@
 {
 	ENSURE_SINGLE_ARG_OR_NIL(args, NSDictionary);
 	NSUInteger * interval = [TiUtils intValue:@"interval" properties:args def:120];
-	BOOL * foregroundOnly = [TiUtils boolValue:@"foregroundOnly" properties:args def:NO];
+	BOOL * foregroundOnly = [TiUtils boolValue:@"foregroundOnly" properties:args def:YES];
     
 	[CSComScore enableAutoUpdate: interval foregroundOnly: foregroundOnly];
 	NSLog(@"[INFO] comScore AutoUpdate interval set to %u", interval);

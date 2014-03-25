@@ -61,7 +61,7 @@ var enableAutoUpdate = Ti.UI.createButton({
 enableAutoUpdate.addEventListener('click', function(e) {
     TiComscore.enableAutoUpdate({
         interval: 125,
-        foregroundOnly: 1
+        foregroundOnly: false
     });
 });
 

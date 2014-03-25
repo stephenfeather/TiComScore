@@ -41,12 +41,12 @@ TiComscore.setAppName('My Cool App');
 
 ### enableAutoUpdate
 
-The module will push updates to the server on its own.  This method allows you to customize the interval and wether the module should track app events while your app is in the background. The default values if this method is called with no arguments are 120 and 0.
+The module will push updates to the server on its own.  This method allows you to customize the interval and wether the module should track app events while your app is in the background. The default values if this method is called with no arguments are 120 and false.
 
 ```javascript
 TiComscore.enableAutoUpdate({
         interval: 125,
-        foregroundOnly: 1
+        foregroundOnly: false
     });
 ```
 
