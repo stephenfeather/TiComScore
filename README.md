@@ -2,10 +2,13 @@
 
 ## Description
 
-The TiComscore module wraps the ComScore iOS sdk for use in Titanium Mobile Applications.
+The TiComscore module wraps the ComScore iOS SDK and ComScore Android SDK for use in Titanium Mobile Applications. 
 
-#### iOS ComScore SDK
+##### iOS ComScore SDK
 version 2.1403.14
+
+##### Android ComScore SDK
+version 2.1403.17
 
 ## Author
 

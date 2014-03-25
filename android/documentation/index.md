@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an Appcelerator Titanium module for iOS that wraps the ComScore iOS SDK.
+This is an Appcelerator Titanium module for iOS that wraps the ComScore iOS SDK. Android has 2 additional methods not available to iOS. Refer to the ComScore documentation for why.
 
 ## Accessing the TiComscore Module
 
@@ -64,6 +64,17 @@ A method that marks the end of an event.
 
 ```javascript
 TiComscore.onUxInactive();
+```
+### onEnterForeground
+
+```javascript
+TiComscore.onEnterForeground();
+```
+
+### onExitForeground
+
+```javascript
+TiComscore.onExitForeground();
 ```
 
 ## Support
