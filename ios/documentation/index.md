@@ -12,10 +12,9 @@ To access this module from JavaScript, you would do the following:
 
 The TiComscore variable is a reference to the Module object.	
 
-## Reference
+## Methods
 
-TODO: If your module has an API, you should document
-the reference here.
+
 
 ### setCustomerC2
 
