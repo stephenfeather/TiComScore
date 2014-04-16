@@ -109,6 +109,18 @@
 	NSLog(@"[INFO] comScore onUxInactive");
 	
 }
+-(void)onEnterForeground:(id)args
+{
+	[CSComScore onEnterForeground];
+	NSLog(@"[INFO] comScore onEnterForeground");
+    
+}
 
+-(void)onExitForeground:(id)args
+{
+	[CSComScore onExitForeground];
+	NSLog(@"[INFO] comScore onExitForeground");
+	
+}
 
 @end

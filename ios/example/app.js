@@ -89,6 +89,29 @@ onUxInactive.addEventListener('click', function(e) {
     onUxActive.enabled = true;
 });
 
+var onEnterForeground = Ti.UI.createButton({
+    top: 10,
+    title: 'Set onEnterForeground'
+});
+
+onEnterForeground.addEventListener('click', function(e) {
+    TiComscore.onEnterForeground();
+    onEnterForeground.enabled = false;
+    onExitForeground.enabled = true;
+});
+
+var onExitForeground = Ti.UI.createButton({
+    top: 10,
+    title: 'Set onExitForeground',
+    enabled: false
+});
+
+onExitForeground.addEventListener('click', function(e) {
+    TiComscore.onExitForeground();
+    onExitForeground.enabled = false;
+    onEnterForeground.enabled = true;
+});
+
 win.add(header);
 win.add(setCustomerC2);
 win.add(setPublisherSecret);
@@ -96,4 +119,6 @@ win.add(setAppName);
 win.add(enableAutoUpdate);
 win.add(onUxActive);
 win.add(onUxInactive);
+win.add(onEnterForeground);
+win.add(onExitForeground);
 win.open();
