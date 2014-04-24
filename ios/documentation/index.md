@@ -52,8 +52,7 @@ TiComscore.enableAutoUpdate({
 
 ### onUxActive
 
-A method that marks the beginning of an event.
-
+A method that marks the beginning of an event. This should only be used in apps that provides background experience, such as streaming music while the app was in the background
 ```javascript
 TiComscore.onUxActive();
 ```
@@ -64,6 +63,22 @@ A method that marks the end of an event.
 
 ```javascript
 TiComscore.onUxInactive();
+```
+
+### onEnterForeground
+
+A method that marks the beginning of an app start.
+
+```javascript
+TiComscore.onEnterForeground();
+```
+
+### onExitForeground
+
+A method that marks the closing of an app.
+
+```javascript
+TiComscore.onExitForeground();
 ```
 
 ## Support
