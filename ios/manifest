@@ -2,7 +2,8 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.7
+version: 0.81
+architectures: armv7 i386 x86_64 arm64
 apiversion: 2
 description: TiComscore
 author: Stephen Feather
@@ -15,4 +16,4 @@ name: TiComscore
 moduleid: com.featherdirect.ticomscore
 guid: 7e074a77-b985-4c26-bad2-7f8b3d2ac2d3
 platform: iphone
-minsdk: 3.2.2.GA
+minsdk: 3.4.1.GA
